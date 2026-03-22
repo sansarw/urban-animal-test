@@ -103,7 +103,7 @@ ul {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .active {
@@ -111,10 +111,13 @@ ul {
 }
 
 .loading-panel {
-  display: grid;
   place-items: center;
   min-height: 280px;
   gap: 16px;
+}
+
+.loading-panel.active {
+  display: grid;
 }
 
 .spinner {
